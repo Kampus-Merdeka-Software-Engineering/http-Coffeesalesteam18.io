@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+    <title>Booking Now</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/booking.css" />
+  </head>
+
+  <body>
+    <section class="head">
+      <div class="container flex1">
+        <div class="logo">
+          <a href="index.html">
+            <img src="image/Logo.png" alt="" />
+          </a>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation">
+      <h1 class="heading">Book Now</h1>
+
+      <form id="myForm" class="section" action="">
+        <div class="container">
+          <div class="box">
+            <p>Name <span>*</span></p>
+            <input
+              type="text"
+              id="name"
+              class="input"
+              placeholder="Your Name"
+            />
+          </div>
+
+          <div class="box">
+            <p>Email <span>*</span></p>
+            <input
+              type="text"
+              id="email"
+              class="input"
+              placeholder="Your Email"
+            />
+          </div>
+
+          <div class="box">
+            <p>Check In <span>*</span></p>
+            <input placeholder="Enter Jam Check In" type="date" id="check_in" class="input" />
+          </div>
+
+          <div class="box">
+            <p>Check Out <span>*</span></p>
+            <input placeholder="Enter Jam Check Out" type="date" id="check_out" class="input" />
+          </div>
+
+          <div class="box">
+            <p>Adults <span>*</span></p>
+            <select id="adults" class="input">
+              <option value="1">1 adults</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+            </select>
+          </div>
+
+          <div class="box">
+            <p>Children <span>*</span></p>
+            <select id="children" class="input">
+              <option value="1">1 Children</option>
+              <option value="2">2 Children</option>
+              <option value="3">3 Children</option>
+              <option value="4">4 Children</option>
+              <option value="5">5 Children</option>
+            </select>
+          </div>
+
+          <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select id="rooms" class="input">
+              <option value="1">1 Rooms</option>
+              <option value="2">2 Rooms</option>
+              <option value="3">3 Rooms</option>
+              <option value="4">4 Rooms</option>
+              <option value="5">5 Rooms</option>
+            </select>
+          </div>
+
+          <div class="box">
+            <p>Room Type <span>*</span></p>
+            <select id="type_room" class="input">
+              <option value="Standart Room">Standart Room</option>
+              <option value="Deluxe Room">Deluxe Room</option>
+              <option value="Suite Room">Suite Room</option>
+              <option value="Family Room">Family Room</option>
+            </select>
+          </div>
+        </div>
+        <button id="mybutton" type="submit" value="Booking" class="btn">Submit</button>
+      </form>
+      <div id="bookingDetails"></div>
+      <script src="js/booking.js"></script>
+    </section>
+  </body>
+</html>
